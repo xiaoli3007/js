@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery滑动横向二级菜单特效 - 站长素材</title>
+<link rel="stylesheet" type="text/css" href="css/sroll_danlie.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/scroll.js"></script>
+
+</head>
+
+<body>
+	
+
+
+<div class="tuijian_r">
+
+
+<div class="tuijian_r_head">
+	<div class="tuijian_r_head_left">
+    	<ul>
+        <li><a href="http://sc.chinaz.com/jiaoben/">艾丝凡</a></li>
+        <li><a href="http://sc.chinaz.com/jiaoben/">低速复苏的</a></li>
+        <li><a href="http://sc.chinaz.com/jiaoben/">第三方</a></li>
+        <li><a href="http://sc.chinaz.com/jiaoben/">打算</a></li>
+        <li><a href="http://sc.chinaz.com/jiaoben/">撒旦</a></li>
+        </ul>
+	</div>
+    <div class="tuijian_r_head_right">
+    	<ul id="tabT04">
+        <li  class="cur"></li>
+        <li></li>
+        <li></li>
+        </ul>
+	</div>
+</div>
+
+
+
+<div class="tuijian_r_middle">
+	<div class="tuijian_r_middle_box">
+		<ul  id="count1" class="count clearfix">
+					<li>
+						<a href="#2685" class="img_wrap"><img src="images/95962653.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>通用雪佛兰-赛欧</p>
+						</div>
+					</li>
+					<li>
+						<a href="#2624" class="img_wrap"><img src="images/95961068.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>进口三菱帕杰罗</p>
+					
+						</div>
+					</li>
+					<li>
+						<a href="#2760" class="img_wrap"><img src="images/95961317.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>E5</p>
+					
+						</div>
+					</li>
+					<li>
+						<a href="#2690" class="img_wrap"><img src="images/95907859.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>POLO</p>
+				
+						</div>
+					</li>
+					<li>
+						<a href="#2664" class="img_wrap"><img src="images/95961473.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>中华V5</p>
+		
+						</div>
+					</li>
+					<li>
+						<a href="#2853" class="img_wrap"><img src="images/95961788.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>K3</p>
+	
+						</div>
+					</li>
+					<li>
+						<a href="#2684" class="img_wrap"><img src="images/95908192.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>全新锐志</p>
+						</div>
+					</li>
+					<li>
+						<a href="#2777" class="img_wrap"><img src="images/95908315.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>B90</p>
+						</div>
+					</li>
+					<li>
+						<a href="#2773" class="img_wrap"><img src="images/95962049.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>思域</p>
+						
+						</div>
+					</li>
+					<li>
+						<a href="#2744" class="img_wrap"><img src="images/95962283.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>索纳塔八</p>
+						
+						</div>
+					</li>
+					<li>
+						<a href="#2705" class="img_wrap"><img src="images/95908659.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>陆丰X8</p>
+						
+						</div>
+					</li>
+					<li>
+						<a href="#2673" class="img_wrap"><img src="images/95961564.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>荣威550</p>
+						
+						</div>
+					</li>
+					<li>
+						<a href="#2753" class="img_wrap"><img src="images/95908803.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>标致207</p>
+						
+						</div>
+					</li>
+					<li>
+						<a href="#2725" class="img_wrap"><img src="images/95908850.jpg" border="0" height="135" width="176"></a>
+
+						<div class="text-area">
+							<p>雪铁龙C4L</p>
+						
+						</div>
+					</li>
+					<li>
+						<a href="#2696" class="img_wrap"><img src="images/95908985.jpg" border="0" height="135" width="176"></a>
+						<div class="text-area">
+							<p>全球鹰GX7</p>
+							
+						</div>
+					</li>
+				</ul>
+	</div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+		
+$(document).ready(function(){
+
+	$("#count1").dayuwscroll({
+		parent_ele:'.tuijian_r_middle_box',
+		list_btn:'#tabT04',
+		pre_btn:'#left1',
+		next_btn:'#right1',
+		path: 'left',
+		auto:true,
+		time:5000,
+		num:5,
+		gd_num:5,
+		waite_time:1000
+	});
+
+});
+
+</script>
+
+
+</body>
+</html>
