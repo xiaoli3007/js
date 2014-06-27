@@ -13,7 +13,7 @@ body,ul{margin:0;padding:0;}
 
 
 /*公共部分*/
-.tuijian_r{margin:0 auto;width:960px; height:220px; border:1px solid #000; /*overflow:hidden;*/}
+.tuijian_r{margin:0 auto;width:960px; height:420px; border:1px solid #000; /*overflow:hidden;*/}
 
 
 .tuijian_r_head {margin:10px auto;width:960px; height:20px; overflow:hidden;  }
@@ -26,9 +26,13 @@ body,ul{margin:0;padding:0;}
 .tuijian_r_head_right ul li a{ display: inline-block ;}
 .tuijian_r_head_right ul li.cur{ background:#f00;}
 
-.tuijian_r_middle{margin:20px auto 0;width:960px; height:160px; overflow:hidden;}
+.tuijian_r_middle{margin:20px auto 0;width:960px; height:340px; overflow:hidden;}
 
-.tuijian_r_middle_box{ width:930px; margin:0 0 0 20px; height:160px; overflow:hidden; position:relative; }
+.tuijian_r_middle_box{ width:930px; margin:0 0 0 20px; height:340px; overflow:hidden; position:relative; }
 
-.tuijian_r_middle_box ul  { height:160px; }
-.tuijian_r_middle_box ul li{ float:left;  margin-right:10px; height:160px; width:176px; overflow:hidden;}
+.tuijian_r_middle_box #count1 { height:340px; }
+.tuijian_r_middle_box #count1 dl{ float:left;  margin-right:10px;width:930px; height:340px;  overflow:hidden;}
+
+.list_sub{ width:930px; height:340px;  overflow:hidden;}
+.list_sub ul{}
+.list_sub ul li { float:left;  margin-right:10px;width:176px; height:160px;  overflow:hidden;}
