@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0; text-decoration:none;}
+body,ul{margin:0;padding:0;}
+
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-table}
+*html .clearfix{height:1%}
+.clearfix{display:block}
+*+html .clearfix{min-height:1%}
+
+
+
+/*公共部分*/
+.tuijian_r{margin:0 auto;width:960px; height:420px; border:1px solid #000; /*overflow:hidden;*/}
+
+
+.tuijian_r_head {margin:10px auto;width:960px; height:20px; overflow:hidden;  }
+.tuijian_r_head_left{ width:570px; float:left; padding-left:30px;}
+.tuijian_r_head_right{  float:right; margin-right:20px;}
+.tuijian_r_head_left ul li{ float:left;}
+.tuijian_r_head_left ul li a{ display:inline ;  margin-left:8px;}
+
+.tuijian_r_head_right ul li{ float:left; width:20px; height:20px; background:#ccc;  margin-left:8px;}
+.tuijian_r_head_right ul li a{ display: inline-block ;}
+.tuijian_r_head_right ul li.cur{ background:#f00;}
+
+.tuijian_r_middle{margin:20px auto 0;width:960px; height:340px; overflow:hidden;}
+
+.tuijian_r_middle_box{ width:930px; margin:0 0 0 20px; height:340px; overflow:hidden; position:relative; }
+
+.tuijian_r_middle_box #count1 { height:340px; }
+.tuijian_r_middle_box #count1 dl{ float:left;  margin-right:10px;width:930px; height:340px;  overflow:hidden;}
+
+.list_sub{ width:930px; height:340px;  overflow:hidden;}
+.list_sub ul{}
+.list_sub ul li { float:left;  margin-right:10px;width:176px; height:160px;  overflow:hidden;}
